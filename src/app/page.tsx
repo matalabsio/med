@@ -18,7 +18,7 @@ const NAV_BUILDINGS = "/navbuildings.png";
 export default function Home() {
   return (
     <main className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-[#f5f5f3]">
-      <header className="relative z-20 w-full overflow-hidden border-b border-[#e8e4dc]/70 py-3 sm:py-4 lg:py-5">
+      <header className="relative z-20 w-full overflow-hidden border-b border-[#e8e4dc]/70 py-1 sm:py-1.5">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#faf9f7] via-[#f5f5f3] to-[#ebe8e2]"
@@ -32,39 +32,39 @@ export default function Home() {
           className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-b from-transparent to-[#1e2356]/[0.04]"
         />
         <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8">
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 overflow-hidden sm:w-20 md:w-24 lg:w-28">
+          <div className="pointer-events-none absolute bottom-[-1px] left-0 h-[72px] w-[88px] overflow-hidden sm:h-[84px] sm:w-[104px] md:h-[92px] md:w-[120px] lg:h-[104px] lg:w-[138px]">
             <Image
               src={NAV_BUILDINGS}
               alt=""
               fill
-              className="-translate-x-[46%] object-cover object-left opacity-80"
+              className="-translate-x-[42%] scale-125 object-cover object-bottom opacity-95"
               sizes="112px"
             />
           </div>
-          <div className="pointer-events-none absolute inset-y-0 left-10 hidden w-20 overflow-hidden min-[390px]:block sm:left-14 sm:w-24 md:left-20 md:w-28 lg:left-24">
+          <div className="pointer-events-none absolute bottom-[-1px] left-12 hidden h-[68px] w-[96px] overflow-hidden min-[390px]:block sm:left-16 sm:h-[78px] sm:w-[112px] md:left-20 md:h-[88px] md:w-[126px] lg:left-24 lg:h-[96px] lg:w-[140px]">
             <Image
               src={NAV_BUILDINGS}
               alt=""
               fill
-              className="-translate-x-[40%] object-cover object-left opacity-65"
+              className="-translate-x-[38%] scale-125 object-cover object-bottom opacity-84"
               sizes="112px"
             />
           </div>
-          <div className="pointer-events-none absolute inset-y-0 right-10 hidden w-20 overflow-hidden min-[390px]:block sm:right-14 sm:w-24 md:right-20 md:w-28 lg:right-24">
+          <div className="pointer-events-none absolute bottom-[-1px] right-12 hidden h-[68px] w-[96px] overflow-hidden min-[390px]:block sm:right-16 sm:h-[78px] sm:w-[112px] md:right-20 md:h-[88px] md:w-[126px] lg:right-24 lg:h-[96px] lg:w-[140px]">
             <Image
               src={NAV_BUILDINGS}
               alt=""
               fill
-              className="-translate-x-[34%] object-cover object-right opacity-65"
+              className="-translate-x-[34%] scale-125 object-cover object-bottom opacity-84"
               sizes="112px"
             />
           </div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 overflow-hidden sm:w-20 md:w-24 lg:w-28">
+          <div className="pointer-events-none absolute bottom-[-1px] right-0 h-[72px] w-[88px] overflow-hidden sm:h-[84px] sm:w-[104px] md:h-[92px] md:w-[120px] lg:h-[104px] lg:w-[138px]">
             <Image
               src={NAV_BUILDINGS}
               alt=""
               fill
-              className="-translate-x-[30%] object-cover object-right opacity-80"
+              className="-translate-x-[27%] scale-125 object-cover object-bottom opacity-95"
               sizes="112px"
             />
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
               width={329}
               height={96}
               priority
-              className="h-auto w-[180px] max-w-[62vw] object-contain sm:w-[220px] md:w-[250px] lg:w-[280px]"
+              className="h-auto w-[178px] max-w-[60vw] object-contain sm:w-[210px] md:w-[235px] lg:w-[260px]"
             />
           </div>
         </div>
@@ -108,14 +108,14 @@ export default function Home() {
             <h1
               className={`${montserrat.className} text-4xl font-bold leading-[1.12] text-[#f5f5f3] sm:text-[2.65rem] md:text-5xl lg:text-6xl`}
             >
-              <span className="block sm:hidden">
-                Low density development in Hyderabad&apos;s South-East corrididor
+              <span className="block md:whitespace-nowrap">
+                Low density development
               </span>
-              <span className="hidden whitespace-nowrap sm:block">
-                Low density development in Hyderabad&apos;s
+              <span className="block md:whitespace-nowrap">
+                in Hyderabad&apos;s
               </span>
-              <span className="hidden whitespace-nowrap sm:block">
-                South-East corrididor
+              <span className="block md:whitespace-nowrap">
+                South-East corridor
               </span>
             </h1>
             <p
